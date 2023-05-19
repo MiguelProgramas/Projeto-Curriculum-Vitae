@@ -34,11 +34,7 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
-li a:hover:not(.active) {
-background-color: #111;
-}
-
-.active {
+li a:hover{
 background-color: #04AA6D;
 }
 body {
@@ -126,16 +122,19 @@ input[type=submit]:hover {
     padding: 20px;
 }
 /*O formulário da W3schools acaba aqui.*/
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 </style> 
 <body>
     </style>
 </head>
 <body>
 <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#informações">Informações profissionais</a></li>
-    <li><a href="#contatos">Contatos</a></li>
-    <li style="float:right"><a href="#sobre">Sobre mim</a></li>
+    <li><a href="#C1">Formações</a></li>
+    <li><a href="#C2">Experiências</a></li>
+    <li><a href="#C3">Soft-skills/ Hard-skills</a></li>
+    <li style="float:right"><a href="#C4">Fomulário</a></li>
 </ul><br>
 <div class="Menus">
     <div class="Menu-esquerdo">
@@ -156,17 +155,17 @@ input[type=submit]:hover {
     <h2>Meu sonho é virar um programador profissional e alcançar uma carreira de sucesso nos
     Estados Unidos.</h2>
     
-    <h2>Você pode me contatar a partir do email: miguel.p.rogramas@gmail.com</h2>   
+    <h2>Você pode me contatar a partir do email: miguel.p.rograma@gmail.com</h2>   
 </div>
-<h1 class="Títulos">Formações</h1>
+<h1 id="C1" class="Títulos">Formações</h1>
 <div class="Conteúdo-textual">
     <h2>Atualmente estudando no SENAI Almirante Tamandaré através do curso: " Técnico em Desenvolvimento de Sistemas".</h2>
 </div>
-<h1 class="Títulos">Experiências</h1>
+<h1 id="C2" class="Títulos">Experiências</h1>
 <div class="Conteúdo-textual">
     <h2>Eu já me expus a vários projetos a partir do meu curso. Alguns projetos pessoais também merecem algum reconhecimento.</h2>
 </div>
-<h1 class="Títulos">Soft-skills</h1>
+<h1 id="C3" class="Títulos">Soft-skills</h1>
 <div class="Conteúdo-textual">
     <h2>Eu me comunico relativamente bem. Proponho um desempenho animado e energético.</h2>
 </div>
@@ -174,7 +173,7 @@ input[type=submit]:hover {
 <div class="Conteúdo-textual">
     <h2>Possuo um conhecimento básico de HTML, CSS e Python. Ampliamento de conhecimentos futuros planejados.</h2>
 </div>
-<h1 class="Títulos">Fomulário de comunicação</h1>
+<h1 id="C4" class="Títulos">Fomulário de comunicação</h1>
 <div class="Formulário">
     <form>
         <label for="fname"><h2>Nome</h2></label>
@@ -184,7 +183,10 @@ input[type=submit]:hover {
         <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome...">
     
         <label for="country"><h2>Email</h2></label>
-        <input type="text" id="lname" name="lastname" placeholder="Seu email...">
+        <input type="text" id="email" name="lastname" placeholder="Seu email...">
+
+        <label for="country"><h2>Mensagem</h2></label>
+        <input type="text" id="message" name="lastname" placeholder="Sua mensagem...">
         <input type="submit" value="Submit">
     </form>
     </div>
