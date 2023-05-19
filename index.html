@@ -43,6 +43,7 @@ background-color: #04AA6D;
 }
 body {
     background-color: #085ed7;
+    background-image:url(imagem-de-fundo.jpg);
 }
 /*O código do W3schools acaba aqui. */
 #Perfil {
@@ -56,11 +57,12 @@ body {
 }
 h1 {
     text-align: center;
+    
 }
 .Menu-esquerdo > div {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
 }
 .Menus > .Menu-esquerdo{
@@ -85,7 +87,11 @@ h1 {
     display: flex;
     margin-left:1%;
     margin-right:1%;
-    flex-wrap:wrap
+    flex-wrap:wrap;
+    color:white
+}
+#Texto-principal {
+    color:white
 }
 </style> 
 <body>
@@ -109,7 +115,7 @@ h1 {
     </div>
 </div>
 <img id="Perfil" src="imagem de perfil.png" alt="Imagem de perfil">
-<h1>Miguel Pereira Lima, a seu dispor</h1>
+<h1 id="Texto-principal">Miguel Pereira Lima, a seu dispor</h1>
 <h1 class="Títulos">Sobre mim</h1>
 <div class="Conteúdo-textual">
     <h2>Programador-aprendiz atualmente trabalhando com tecnologias de front e back-end.</h2>
