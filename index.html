@@ -93,6 +93,39 @@ h1 {
 #Texto-principal {
     color:white
 }
+/*Este fomulário foi tirado da W3schools. Ele usa extensivamente do elemento HTML "input" (por motivos óbvios).
+As pseudo-classes "focus" e "hover" foram adicionados por mim para garantir uma experiência mais satisfatória e 
+relaxante.*/
+input[type=submit] {
+    width: 100%;
+    background-color: #8704c9;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    outline:none;
+}
+input[type=text] {
+    width:97%;
+    padding: 14px;
+    border:2px solid #8704c9;
+}
+input[type=text]:focus {
+    border:3px solid #640387
+}
+input[type=submit]:hover {
+    background-color: #640387;
+}
+.Formulário {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+/*O fomulário da W3schools acaba aqui.*/
 </style> 
 <body>
     </style>
@@ -141,3 +174,17 @@ h1 {
 <div class="Conteúdo-textual">
     <h2>Possuo um conhecimento básico de HTML, CSS e Python. Ampliamento de conhecimentos futuros planejados.</h2>
 </div>
+<h1 class="Títulos">Fomulário de comunicação</h1>
+<div class="Formulário">
+    <form>
+        <label for="fname"><h2>Nome</h2></label>
+        <input type="text" id="fname" name="firstname" placeholder="Seu nome...">
+    
+        <label for="lname"><h2>Sobrenome</h2></label>
+        <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome...">
+    
+        <label for="country"><h2>Email</h2></label>
+        <input type="text" id="lname" name="lastname" placeholder="Seu email...">
+        <input type="submit" value="Submit">
+    </form>
+    </div>
