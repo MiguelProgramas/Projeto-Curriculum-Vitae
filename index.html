@@ -45,7 +45,7 @@ body {
     background-color: #085ed7;
 }
 /*O código do W3schools acaba aqui. */
-img {
+#Perfil {
     margin-left: auto;
     margin-right: auto;
     width:180px;
@@ -56,6 +56,22 @@ img {
 }
 h1 {
     text-align: center;
+}
+.Menu-esquerdo > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.Menus > .Menu-esquerdo{
+    float:left;
+    clear:none;
+}
+#Opções {
+    width: 60px;
+}
+.Menus > .Menu-direito {
+    float:right;
 }
 </style> 
 <body>
@@ -68,5 +84,15 @@ h1 {
     <li><a href="#contatos">Contatos</a></li>
     <li style="float:right"><a href="#sobre">Sobre mim</a></li>
 </ul><br>
-<img src="imagem de perfil.png" alt="Imagem de perfil">
+<div class="Menus">
+    <div class="Menu-esquerdo">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="Menu-direito">
+        <img id="Opções" src="3 pontos ícone.png" alt="ícone de opções">
+    </div>
+</div>
+<img id="Perfil" src="imagem de perfil.png" alt="Imagem de perfil">
 <h1>Miguel Pereira Lima, a seu dispor</h1>
